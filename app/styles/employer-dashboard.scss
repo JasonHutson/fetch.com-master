@@ -1,0 +1,497 @@
+@import 'variables';
+
+#employerDashboard {
+  height: 100%;
+
+  #dashboardContent {
+    padding: 0em;
+    margin: 20px 0 0 10px;
+
+    .mobile-buttons {
+      display: none;
+    }
+  }
+
+  .dashboard {
+
+    .capitalize {
+      text-transform: capitalize;
+    }
+
+    select {
+      background-color: #eee;
+      border-radius: 0;
+
+      &.empty {
+        color: #888;
+      }
+    }
+
+    input {
+      width: auto;
+      height: 28px;
+      background-color: #eee;
+      border-radius: 0;
+      border: 0;
+
+      &:focus {
+        background: #fff;
+      }
+    }
+
+    textarea {
+      height: 100px;
+      max-height: 100px;
+      width: 330px;
+      resize: none;
+      overflow-y: visible;
+      background-color: #eee;
+      border: 1px solid #eee;
+    }
+
+    main {
+      max-height: 80%;
+    }
+
+    nav.ui.fixed.menu {
+      background-color: $nav-menu-primary-color;
+      border-bottom: 3px solid white;
+    }
+
+    .nav-menu {
+      margin-left: 20px;
+      display: inherit;
+
+      .mobile.messages {
+        display: none;
+      }
+    }
+
+    .ui.inverted.menu {
+      height: 70px;
+      border-bottom: 1px solid white;
+      margin-bottom: 25px;
+      .item {
+        font-size: 1.25em;
+        color: black;
+        text-transform: uppercase;
+        &.active {
+          color: $nav-menu-primary-color !important;
+          background-color: black !important;
+        }
+      }
+    }
+
+    .ui.fixed.menu + .ui.grid {
+      padding-top: 60px;
+      margin-top: 0;
+    }
+
+    img.logo {
+      margin: -58px 10px 20px 40px;
+      width: 200px;
+      height: 200px;
+      overflow: visible;
+    }
+
+    .account-info {
+      padding: 80px 0 20px 0;
+      text-transform: uppercase;
+
+      .title {
+        padding: 0 1em;
+        text-align: center;
+        margin-bottom: 0;
+        color: $accent-color;
+      }
+
+      .image-container img {
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      .summary {
+        padding: 10px;
+        font-size: 0.9em;
+      }
+    }
+
+    .account-filters {
+      padding-left: 1em;
+      padding-right: 1em;
+      font-size: 12px;
+
+      .title {
+        font-weight: normal;
+      }
+
+      .ui.list {
+        font-size: 13px;
+        .item {
+          padding-bottom: 1em;
+          .header {
+            color: $accent-color;
+          }
+        }
+      }
+    }
+
+    .ui.grid {
+      .column.left-sidebar {
+        width: 240px !important;
+        padding-left: 0em;
+        padding-right: 0em;
+        margin-left: 22px;
+        margin-right: 0em;
+        margin-top: 20px;
+        border: 1px solid white;
+      }
+    }
+
+    .ui.grid {
+      .column.right-sidebar {
+        width: 220px !important;
+        margin: 0 auto;
+        margin-top: 1em;
+        font-size: 1.2em;
+        .accent {
+          color: $accent-color;
+        }
+
+        .conversations {
+          padding-bottom: 50px;
+          .title {
+            padding-bottom: 5px;
+          }
+        }
+
+        .agent {
+          .ui.circular.image {
+            border: 2px solid white;
+            width: 220px;
+            height: 220px;
+            cursor: pointer;
+          }
+
+          margin-top: 20px;
+          padding-bottom: 50px;
+
+          .title.column.mobile {
+            display: none;
+          }
+
+          .title {
+            padding-bottom: 5px;
+          }
+          .name {
+            text-transform: uppercase;
+            padding-top: 5px;
+          }
+          .status {
+            position: relative;
+
+            .online {
+              display: inline-block;
+              position: relative;
+              width: auto;
+              color: $status-online-text;
+
+              .circle {
+                // position: absolute;
+                // left: -15px;
+                // top: 3px;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                display: inline-block;
+                width: 12px;
+                height: 12px;
+                border: 1px solid white;
+                background: $status-online-circle;
+              }
+
+            }
+            .offline {
+              display: inline-block;
+              position: relative;
+              width: auto;
+              color: $status-offline-text;
+
+              .circle {
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                display: inline-block;
+                width: 12px;
+                height: 12px;
+                border: 1px solid white;
+                background: $status-offline-circle;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .actions-panel {
+      margin-top: 10px;
+      text-align: center;
+
+      .invite {
+        margin: 20px auto 0 auto;
+        text-align: center;
+        width: 150px;
+      }
+
+      .invite-note {
+        padding: 5px;
+        color: $accent-color;
+      }
+
+      .edit-buttons {
+        .ui.button {
+          font-size: 10px;
+          width: 110px;
+          padding: 10px 0;
+        }
+        margin: 30px auto;
+      }
+    }
+
+    .footer {
+      margin-left: 0.5em;
+      padding: 1em;
+
+      .copyright {
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+
+        .accent {
+          color: $accent-color;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $largeMonitorBreakpoint) {
+  .ui.menu .item:before {
+    content: none;
+  }
+  #employerDashboard {
+    .ui.inverted.menu {
+      border-bottom: none !important;
+      .logo {
+        display: none;
+      }
+      .logout {
+        display: none;
+      }
+      .logo.fetch.mobile {
+        display: inline !important;
+        background-image: url("../images/mobile-fetch-logo.png");
+        background-size: 100%;
+        width: 80px;
+        height: 50px;
+        position: absolute;
+        top: 10px;
+        right: 30px;
+      }
+
+      .nav-menu {
+        a.item.active {
+          background-color: transparent !important;
+        }
+        a.item {
+          margin-right: 25px;
+          .text {
+            display: none;
+          }
+
+          &.jobs {
+            background-image: url("../images/mobile-fetched-jobs.png") !important;
+            background-size: 100%;
+            background-color: transparent !important;
+            width: 60px;
+            height: 36px;
+            top: 15px;
+          }
+          &.mobile.messages {
+            background-image: url("../images/mobile-messages.png") !important;
+            background-size: 100%;
+            background-color: transparent !important;
+            width: 50px;
+            height: 40px;
+            top: 15px;
+            display: inline-block;
+          }
+          &.messages {
+            display: none;
+          }
+          &.offers {
+            background-image: url("../images/mobile-offers.png") !important;
+            background-size: 100%;
+            background-color: transparent !important;
+            width: 40px;
+            height: 40px;
+            top: 15px;
+          }
+        }
+      }
+    }
+
+    .column.left-sidebar {
+      display: none;
+    }
+
+    .column.center-content {
+      width: 100% !important;
+    }
+
+    .middle-column {
+      width: 100% !important;
+    }
+
+    #dashboardContent {
+      display: block;
+      width: 100% !important;
+      background-color: transparent;
+      border: none;
+      margin: 0 !important;
+
+      .mobile-buttons {
+        display: block;
+        width: 100% !important;
+        margin: 1em auto;
+        text-align: center;
+
+        .ui.button {
+          font-size: 1em;
+          padding: 0.6em 0.4em;
+        }
+      }
+
+      .job-board {
+        .header {
+          margin: 0.5em;
+
+          .title {
+            display: none;
+          }
+
+          .add-job {
+            display: none;
+          }
+
+          .job-filter {
+            width: 100% !important;
+            margin: 0 auto;
+            text-align: center;
+            .item {
+              display: inline-block;
+              table-layout: auto;
+              width: 45%;
+              margin-left: 5px;
+              margin-right: 5px;
+              .button {
+                width: 100%;
+                display: block;
+                float: none;
+                margin: 0;
+              }
+            }
+          }
+        }
+
+        .ui.items {
+          .no-jobs {
+            background-color: white;
+            margin: 1em;
+            padding: 1em;
+          }
+
+          .position {
+            background-color: white;
+            width: 90% !important;
+            margin: 0 auto;
+            font-size: 8px;
+            padding: 0.5em 1em;
+
+            .content {
+              .grid.details {
+                line-height: 12px;
+                padding: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .dashboard .ui.grid .column.right-sidebar {
+      display: block;
+      width: 100% !important;
+      margin: 0 auto;
+
+      .edit-profile.mobile {
+        display: inline-block !important;
+        padding: 8px 10px !important;
+        margin: 0 10px 20px 10px;
+      }
+
+      .conversations, .no-conversations {
+        display: none;
+      }
+
+      .agent {
+        margin: 0 auto;
+        padding: 0;
+
+        .title.column {
+          display: none !important;
+
+          &.mobile {
+            display: inline !important;
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: bold;
+          }
+        }
+
+        .column.title {
+          margin-bottom: 10px;
+        }
+        .column.image {
+          width: auto !important;
+          margin: 0 auto;
+        }
+        .column.name {
+          display: none;
+        }
+        .column.status {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .footer {
+    font-size: 0.8em;
+    margin-top: 15px;
+    text-align: center;
+    .accent {
+      color: $accent-color;
+    }
+  }
+}
+
+#dashboardContent {
+  background: white;
+  color: black;
+  border:1px solid white;
+  padding: 1em;
+}
+
+.featureText {
+  color: $nav-menu-primary-color;
+}

@@ -1,0 +1,181 @@
+@import 'variables';
+
+.messaging-panel {
+  padding: 15px;
+  background-color: white;
+
+  .ui.grid.content {
+    padding: 0;
+    margin: 0;
+  }
+
+  .header {
+    padding: 20px 15px;
+
+    .title {
+      font-size: 2.5em;
+
+      .position {
+        font-size: 14px;
+        color: $talent-dashboard-font-color;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .message.comment {
+    width: 95%;
+    float: left;
+    border-bottom: 2px solid $accent-color;
+    margin-left: 20px;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+
+    .content {
+      &.right.floated {
+        float: right;
+      }
+
+      .author {
+        color: $accent-color;
+        text-transform: uppercase;
+        display: block;
+      }
+      .date {
+        display: block;
+      }
+    }
+  }
+
+  .column.company {
+    padding: 15px !important;
+
+    .column.company-info {
+      margin: 0px;
+      border: 1px solid #ccc;
+      padding: 30px 10px !important;
+    }
+
+    .column.company-video {
+      margin: 0px;
+      padding-top: 20px;
+      text-align: center;
+
+      .accent {
+        color: $accent-color;
+        text-align: right;
+      }
+    }
+  }
+
+  .ui.list {
+    .item {
+      color: $talent-dashboard-font-color;
+
+      .header {
+        padding: 10px 0 0 0;
+        color: $accent-color;
+      }
+    }
+  }
+
+  .ui.reply.form {
+    clear: both;
+    margin: 0px;
+    padding: 10px;
+    border: 1px solid #ccc;
+
+    .title {
+      color: $accent-color;
+      margin-bottom: 5px;
+    }
+
+    textarea {
+      background-color: $input-bg-color;
+      resize: none;
+      border-radius: 0;
+    }
+
+    .button {
+      width: 105px;
+      margin-left: 10px;
+
+      .loading-indicator {
+        &.hidden {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $largeMonitorBreakpoint) {
+  .messaging-panel {
+    padding: 0.5em;
+    background-color: white;
+    margin: 1.5em 1em;
+
+    .header {
+      margin: 0;
+      padding: 0;
+      .title {
+        .messages {
+          display: none;
+        }
+      }
+      .column.buttons {
+        display: none;
+      }
+    }
+
+    .ui.grid.content {
+      border: 1px solid #ccc;
+      padding: 1em;
+
+      .column.message-list {
+        width: 100% !important;
+
+        .ui.reply.form {
+          width: 100% !important;
+
+          textarea {
+            width: 100% !important;
+          }
+
+          .buttons {
+            width: 100% !important;
+            text-align: right;
+            .ui.button {
+              margin: 5px 0 0 0;
+            }
+          }
+        }
+      }
+
+      .column.right-column {
+        width: 100% !important;
+
+        .talent-information-panel {
+          padding: 0;
+        }
+        .grid.details {
+          display: none;
+        }
+
+        .company-information-panel {
+          .section.video {
+            display: none;
+          }
+        }
+
+        .make-offer {
+
+        }
+      }
+    }
+  }
+}

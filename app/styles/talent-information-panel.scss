@@ -1,0 +1,90 @@
+@import 'variables';
+
+.talent-information-panel {
+  padding-left: 20px;
+  font-size: 12px;
+  .details {
+    border: 2px solid #ccc;
+    padding: 20px 10px 0 10px;
+
+    overflow: scroll;
+
+    input {
+      border: 0;
+    }
+
+    select {
+      width: 130px;
+      border: 0;
+    }
+
+    .item {
+      padding-bottom: 10px;
+      .header {
+        color: $accent-color;
+      }
+      .value {
+        text-transform: uppercase;
+        color: $talent-dashboard-font-color;
+      }
+    }
+  }
+
+  .logo {
+    position: relative;
+    img {
+      position: absolute;
+      margin-top: 50%;
+      width: 100%;
+      padding: 10px;
+    }
+  }
+
+  .make-offer {
+    margin-top: 20px;
+    text-align: center;
+    cursor: pointer;
+
+    .button {
+      margin: 0 auto;
+      height: 110px;
+      width: 110px;
+      font-size: 1.5em;
+      font-weight: bold;
+      padding: 30px 10px 10px 10px;
+
+      &.green {
+        color: white;
+      }
+
+      &.red {
+        color: black;
+        padding-top: 25px;
+      }
+
+      .smaller {
+        font-size: 0.6em;
+      }
+
+      .thin {
+        font-size: 0.8em;
+        font-weight: normal;
+
+        .icon.minus {
+          font-size: 1em;
+          font-weight: normal;
+        }
+      }
+    }
+
+    img {
+      border: 1px solid white;
+
+      &:hover {
+        border-radius: 500px;
+        border: 1px solid #888;
+      }
+    }
+  }
+
+}

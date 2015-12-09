@@ -1,0 +1,48 @@
+
+@import "variables";
+
+div.two-state-box-image {
+  cursor: pointer;
+  position: relative;
+
+  .label {
+    display: none;
+  }
+
+  .two-state-box {
+    border: none;
+  }
+}
+
+div.two-state-box-image.selected {
+  background: rgba(0, 255, 0, 0.8);
+
+  .check {
+    background: url("../images/culture-check.png");
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+    z-index: 2;
+  }
+
+  img {
+    opacity: 0.65;
+  }
+}
+
+@media screen and (max-width: $largeMonitorBreakpoint) {
+  div.two-state-box-image {
+    font-size: 1.2em;
+
+    .check {
+      display: none;
+    }
+
+    img {
+      display: none !important;
+    }
+  }
+}

@@ -1,0 +1,465 @@
+@import 'variables';
+
+#talentLoginPanel {
+  .signup.header {
+    display: none;
+  }
+
+  .footer {
+    margin-top: 50px;
+    font-size: 11px;
+    text-align: center !important;
+
+    .accent {
+      color: $accent-color;
+    }
+  }
+
+  .social-networks {
+    margin: 0;
+
+    .button.github,
+        .button.linkedin {
+      width: 115px;
+      color: white;
+      font-size: 1.4em;
+      padding: 0.75em 1em;
+    }
+  }
+
+  .button.login {
+    padding: 1em 2em;
+    width: 130px;
+  }
+
+  margin-left: -30%;
+
+  .ui.cards .login.card {
+    width: 600px;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 200px;
+
+    .error-message {
+      margin-left: 20%;
+      display: none;
+
+      &.show {
+        display: block;
+      }
+    }
+  }
+
+  .ui.cards .login.card .header.login {
+    margin-top: -75px;
+    margin-right: -40px;
+    color: #fff;
+    text-align: right;
+    font-size: 1.7em;
+    font-weight: bold;
+  }
+
+  .ui.cards .login.card .meta {
+    margin-top: 50px;
+    color: black;
+  }
+
+  .ui.cards .login.card .meta .pull-left {
+    text-align: left;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .ui.cards .login.card .meta .pull-right {
+    text-align: right;
+    padding-left: 0;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+
+  .ui.cards .login.card .meta .center {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .ui.cards .login.card .meta .sign-up {
+    padding-top: 20px;
+  }
+
+  .ui.cards .login.card .meta .sign-up a {
+    color: $accent-color;
+    text-decoration: underline;
+  }
+
+  .ui.cards .login.card .form label {
+    width: 200px;
+    text-align: right;
+    margin-right: 15px;
+    color: #AAA;
+  }
+
+  .ui.cards .login.card .form .ui.checkbox label {
+    width: auto;
+    font-size: 0.9em;
+    color: black;
+  }
+
+  .ui.cards .login.card .form .forgot-password {
+    color: $accent-color;
+    font-size: 0.9em;
+    font-style: italic;
+  }
+
+  .ui.cards .login.card .form .ui.input {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .ui.cards .login.card .form button.login {
+    width: 160px;
+    border-radius: 0;
+  }
+
+  .ui.cards .login.card .form input {
+    width: 200px;
+    background-color: #eee;
+    border-radius: 0;
+  }
+
+  .ui.cards .login.card .form .ui.checkbox input {
+    width: auto;
+  }
+
+  .ui.cards .login.card .form input:focus {
+    background: #fff !important;
+  }
+
+  .ui.cards .login.card .form input.name {
+    background: #eee url("../images/icon-people.png") no-repeat scroll 5px 8px;
+    padding-left: 25px;
+  }
+
+  .ui.cards .login.card .form input.security {
+    background: #eee url("../images/icon-security.png") no-repeat scroll 5px 8px;
+    padding-left: 25px;
+  }
+
+  .buttons-panel {
+    margin: 0 auto !important;
+    text-align: center;
+    margin-top: 0px !important;
+  }
+
+  .buttons-panel .button {
+    display: block;
+    width: 115px;
+    height: 40px;
+    border: 1px solid #4C4C4C;
+    border-radius: 0;
+    color: #A2CB39;
+    background-color: #000;
+    line-height: 40px;
+  }
+
+  .ui.cards > .card {
+    padding: 30px;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .left-arrow {
+    background: url("../images/arrow-left.png") no-repeat;
+    height: 135px;
+    left: 0px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 60px;
+    padding-right: 0;
+    margin: auto;
+    cursor: pointer;
+  }
+
+  .button-top-left-accent {
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-right: 6px solid #4C4C4C;
+    height: 0;
+    left: 14px;
+    position: absolute;
+    top: 11px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    width: 0;
+  }
+}
+
+@media screen and (max-width: $largeMonitorBreakpoint) {
+  body.talent.login {
+    background-image: url("../images/mobile-talent-login-bg.jpg");
+
+    .login-header {
+      background-color: $accent-color;
+      background-image: url("../images/mobile-fetch-logo.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 60px 40px;
+      height: 50px;
+      width: 100%;
+      display: inline-block;
+    }
+
+    #talentLoginPanel {
+      padding-top: 0;
+      padding-bottom: 0;
+      height: 100%;
+      margin-left: 0;
+
+      .login-container {
+        width: 100%;
+      }
+
+      .ui.cards {
+        .login.card {
+          width: 100%;
+          max-width: 100%;
+          margin-top: 0;
+          background-color: transparent;
+
+          .meta {
+            margin-top: 1em;
+          }
+
+          .left-arrow {
+            display: none;
+          }
+
+          .header.login {
+            margin: 0;
+            text-align: center;
+          }
+
+          .form {
+            margin: 0;
+
+            .field {
+              width: 100% !important;
+              text-align: center;
+
+              input {
+                margin: 0 auto;
+                font-size: 1.5em;
+                padding-left: 30px;
+                background-position: 6px 15px;
+                max-width: 50%;
+                min-width: 250px;
+              }
+            }
+
+            .ui.red.pointing.prompt {
+              text-align: center;
+              margin: 0 auto;
+              width: 90%;
+              font-size: 1.2em;
+            }
+
+            .space {
+              display: none;
+            }
+
+            .social-networks {
+              width: 100% !important;
+
+              .pull-right {
+                text-align: center;
+                width: 100% !important;
+
+                .label {
+                  color: white;
+                  display: block;
+                  width: 100% !important;
+                  font-size: 1.5em;
+                }
+              }
+
+              .buttons {
+                width: 100% !important;
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+
+                a {
+                  display: inline-block;
+                  text-align: center;
+                  margin: 0 auto;
+                  max-width: 48%;
+                  width: 280px;
+                }
+
+                .button {
+                  text-align: center;
+                  display: inline-block;
+                  margin: 1em auto !important;
+                  max-width: 250px;
+                  width: 90%;
+                }
+              }
+
+              .or {
+                display: none;
+              }
+            }
+
+            .ui.button.login {
+              width: 100%;
+              max-width: 280px;
+              font-size: 1.5em;
+              background-color: $accent-color;
+              color: white;
+            }
+
+            .extras {
+              label {
+                color: white;
+              }
+            }
+
+            .sign-up {
+              font-size: 1em;
+              color: white;
+
+              a {
+                font-size: 1.4em;
+              }
+            }
+          }
+        }
+
+        .buttons-panel {
+          display: none;
+        }
+      }
+    }
+
+    .footer {
+      margin-top: 50px;
+      font-size: 11px;
+      text-align: center !important;
+    }
+  }
+}
+
+@media screen and (max-width: $tabletBreakpoint) {
+  body.talent.login {
+
+    #talentLoginPanel {
+
+      .ui.cards {
+        .login.card {
+          padding: 1em 0 0 0;
+
+          .form {
+
+            .social-networks {
+
+              .pull-right {
+                .label {
+                  font-size: 1em;
+                }
+              }
+
+              .buttons {
+                width: 100% !important;
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+
+                a {
+                  display: inline-block;
+                  text-align: center;
+                  margin: 10px auto;
+                  max-width: 48%;
+                  width: 180px;
+                }
+
+                .button {
+                  text-align: center;
+                  display: inline-block;
+                  margin: 0 !important;
+                  max-width: 180px;
+                  width: 95%;
+                }
+              }
+            }
+
+            .ui.button.login {
+              max-width: 250px;
+              font-size: 1.5em;
+              background-color: $accent-color;
+              color: white;
+            }
+
+            .sign-up {
+              font-size: 0.7em;
+              color: white;
+
+              a {
+                font-size: 1.4em;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $mobileBreakpoint) {
+  body.talent.login {
+
+    #talentLoginPanel {
+
+      .ui.cards {
+        .login.card {
+          padding: 0;
+
+          .form {
+
+            .social-networks {
+
+              .buttons {
+                width: 100% !important;
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+
+                a {
+                  display: block;
+                  text-align: center;
+                  margin: 10px auto;
+                  max-width: 250px;
+                }
+
+                .button {
+                  text-align: center;
+                  display: block;
+                  margin: 0 !important;
+                  max-width: 3250px;
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

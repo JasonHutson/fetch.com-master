@@ -1,0 +1,85 @@
+@import 'variables';
+
+#talentDashboard {
+  .not-interested-panel {
+    margin: 10px;
+
+    .header {
+      font-size: 2.5em;
+      padding-bottom: 10px;
+
+      .title {
+        display: inline-block;
+
+      }
+
+      .position-name {
+        display: inline-block;
+        font-size: 13px;
+        margin-left: 5px;
+        text-transform: uppercase;
+      }
+
+      .accent {
+        color: $accent-color;
+      }
+    }
+
+    .content {
+      padding: 20px;
+      margin: 20px;
+      border: 2px solid #ddd;
+
+      .information {
+        text-align: center;
+
+        .accent {
+          color: $accent-color;
+          padding-bottom: 10px;
+          font-size: 1.1em;
+        }
+      }
+
+      .inner-content {
+        border: 2px solid #ddd;
+        margin: 10px 0;
+        padding: 30px !important;
+
+        textarea {
+          width: 90%;
+          color: $accent-color;
+          background-color: #eee;
+          text-transform: uppercase;
+        }
+
+        .ui.button {
+          display: block;
+          font-size: 2.5em;
+          font-weight: bold;
+          width: 300px;
+          height: 80px;
+          margin: 20px auto;
+
+          &.submit {
+            margin-top: 10px;
+            margin-right: 35px;
+            font-size: 1.1em;
+            width: 120px;
+            height: 40px;
+          }
+
+          .black {
+            background-color: black;
+            color: white;
+          }
+        }
+      }
+    }
+
+    ::-webkit-input-placeholder { color: $accent-color; }
+    ::-moz-placeholder {color: $accent-color; }
+    :-ms-input-placeholder { color: $accent-color; }
+    :-o-input-placeholder { color: $accent-color; }
+  }
+}
+

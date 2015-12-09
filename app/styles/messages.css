@@ -1,0 +1,29 @@
+div.test-data {
+  margin: 10px;
+}
+
+div.test-data p {
+  font-style: italic;
+  color: #ffc;
+}
+
+div.messages-demo {
+  padding-top: 50px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+div.messages-demo h1 {
+  text-align: center;
+  margin: 10px;
+}
+
+div.messages-demo ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+div.messages-demo ul li button {
+  margin: 5px !important;
+}

@@ -1,0 +1,156 @@
+@import 'variables';
+
+#agentDashboard {
+  height: 100%;
+
+  #dashboardContent {
+    padding: 0em;
+    margin: 20px 0 0 10px;
+  }
+
+  .dashboard {
+
+    .capitalize {
+      text-transform: capitalize;
+    }
+
+    main {
+      max-height: 80%;
+    }
+
+    nav.ui.fixed.menu {
+      background-color: $nav-menu-primary-color;
+      border-bottom: 3px solid white;
+    }
+
+    .agent-info {
+      padding: 80px 0 20px 0;
+      text-transform: uppercase;
+
+      .title {
+        padding: 0 1em;
+        text-align: center;
+        margin-bottom: 0;
+        color: $accent-color;
+      }
+
+      .image-container img {
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      .summary {
+        padding: 10px;
+        font-size: 0.9em;
+      }
+    }
+
+    .nav-menu {
+      margin-left: 20px;
+      display: inherit;
+    }
+
+    .ui.inverted.menu {
+      height: 70px;
+      border-bottom: 1px solid white;
+      margin-bottom: 25px;
+      .item {
+        font-size: 1.25em;
+        color: black;
+        text-transform: uppercase;
+        &.active {
+          color: $nav-menu-primary-color !important;
+          background-color: black !important;
+        }
+      }
+    }
+
+    .ui.fixed.menu + .ui.grid {
+      padding-top: 60px;
+      margin-top: 0;
+    }
+
+    .ui.grid {
+      .column.left-sidebar {
+        width: 240px !important;
+        padding-left: 0em;
+        padding-right: 0em;
+        margin-left: 22px;
+        margin-right: 0em;
+        margin-top: 20px;
+        border: 1px solid white;
+      }
+    }
+
+    .ui.grid {
+      .column.right-sidebar {
+        width: 220px !important;
+        margin: 0 auto;
+        margin-top: 1em;
+        font-size: 1.2em;
+        .accent {
+          color: $accent-color;
+        }
+
+        .conversations {
+          padding-bottom: 50px;
+          .title {
+            padding-bottom: 5px;
+          }
+        }
+
+        .agent {
+          .ui.circular.image {
+            border: 2px solid white;
+          }
+
+          margin-top: 20px;
+          padding-bottom: 50px;
+          .title {
+            padding-bottom: 5px;
+          }
+          .name {
+            text-transform: uppercase;
+            padding-top: 5px;
+          }
+          .status {
+            .green {
+              color: $accent-color;
+
+              .circle {
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                display: block;
+                width: 10px;
+                height: 10px;
+                background: $accent-color;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    img.logo {
+      margin: -58px 10px 20px 40px;
+      width: 200px;
+      height: 200px;
+      overflow: visible;
+    }
+
+   .footer {
+      margin-left: 0.5em;
+      padding: 1em;
+
+      .copyright {
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+
+        .accent {
+          color: $accent-color;
+        }
+      }
+    }
+  }
+}

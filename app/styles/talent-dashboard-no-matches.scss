@@ -1,0 +1,56 @@
+@import 'variables';
+
+#talentDashboard {
+  .no-matches {
+    margin: 10px;
+
+    .header {
+      font-size: 2.5em;
+      padding-bottom: 10px;
+
+      .accent {
+        color: $accent-color;
+      }
+    }
+
+    .content {
+      padding: 20px;
+      margin: 0 0 20px 0;
+      border: 2px solid #ddd;
+      text-align: center;
+      font-weight: bold;
+
+      p {
+        margin-bottom: 0.5em;
+      }
+
+      .accent {
+        color: $accent-color;
+        font-size: 1.1em;
+      }
+
+      .inner-content {
+        border: 2px solid #ddd;
+        margin: 10px 0;
+        padding: 30px 20px !important;
+        min-height: 30em;
+        position: relative;
+
+        .text {
+          display: inline-block;
+          width: 100%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          font-size: 3.5em;
+
+          p {
+            margin: 0;
+          }
+        }
+      }
+
+    }
+  }
+}

@@ -1,0 +1,84 @@
+@import 'variables';
+
+#talentDashboard {
+  .offer-accepted {
+    padding: 15px;
+
+    .header {
+      h1 {
+        font-size: 2.5em;
+
+        .accent {
+          color: $accent-color;
+        }
+      }
+    }
+
+    .content {
+      border: 2px solid #ccc;
+      padding: 10px;
+
+      .details {
+        margin-left: 80px;
+
+        .label {
+          color: $accent-color;
+          font-size: 2em;
+          line-height: 1.1em;
+          margin-top: 20px;
+          margin-bottom: 5px;
+          padding-left: 50px;
+        }
+
+        .value {
+          color: $talent-dashboard-font-color;
+          font-size: 2em;
+          line-height: 1.1em;
+          text-transform: uppercase;
+          margin-bottom: 5px;
+        }
+      }
+
+      .extra {
+        div {
+          margin: 0 auto;
+          text-align: center;
+
+          &.talent {
+            text-transform: uppercase;
+            font-size: 16px;
+            color: $talent-dashboard-font-color;
+            .name {
+              color: $accent-color;
+            }
+          }
+
+          &.company {
+            text-transform: uppercase;
+            font-size: 16px;
+            color: $talent-dashboard-font-color;
+            .hiring-manager {
+              color: $accent-color;
+            }
+          }
+
+          &.arrows {
+            position: relative;
+            height: 220px;
+
+            img {
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              display: block;
+            }
+          }
+
+          img {
+            margin: 5px auto;
+          }
+        }
+      }
+    }
+  }
+}

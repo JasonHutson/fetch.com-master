@@ -1,0 +1,264 @@
+@import 'variables';
+
+$input-bg-color: #eee;
+
+#employerDashboard {
+  .dashboard {
+
+    .add-job {
+
+      .header {
+        margin: 10px 15px 0 15px;
+
+        .title h1 {
+          font-size: 2em;
+
+          .green {
+            color: $accent-color;
+          }
+        }
+      }
+
+      .ui.button {
+        background-color: $accent-color;
+        border-radius: 0;
+      }
+
+      .form {
+        border: 2px solid #ccc;
+        padding: 15px !important;
+        margin: 10px !important;
+
+        .field {
+          &.skills.desktop {
+            .value.middle {
+              margin-top: -10px;
+              margin-bottom: 10px;
+            }
+          }
+
+          &.skills.mobile {
+            display: none;
+          }
+
+          .value {
+            width: 80%;
+
+            input {
+              width: 100%;
+            }
+
+            &.error {
+              input, textarea {
+                background: $error-bg-color;
+                border-color: $error-border-color;
+                color: $error-color;
+                box-shadow: none;
+              }
+
+              .Select-control {
+                border: 1px solid $error-border-color;
+                background: $error-bg-color;
+
+                .Select-placeholder {
+                  color: $error-color;
+                }
+              }
+            }
+          }
+        }
+
+        .file-upload-status {
+          text-transform: uppercase;
+          font-size: 0.9em;
+          color: #888;
+          display: block;
+        }
+
+        .file-upload {
+          position: relative;
+          overflow: hidden;
+          width: 100px;
+          height: 28px;
+          background-color: $input-bg-color;
+          font-size: 0.9em;
+          text-transform: uppercase;
+
+          input.upload {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+            cursor: pointer;
+            opacity: 0;
+            filter: alpha(opacity=0);
+          }
+        }
+
+        input {
+          text-transform: uppercase;
+          padding: 0.3em;
+          border-radius: 0;
+          background-color: $input-bg-color;
+          border: 1px solid $input-bg-color;
+
+          &:focus {
+            background-color: #fff;
+          }
+
+        }
+
+        label {
+          color: $accent-color;
+          vertical-align: middle;
+          line-height: 2em;
+          text-transform: uppercase;
+        }
+
+        textarea {
+          text-transform: uppercase;
+          width: 100%;
+          resize: none;
+          overflow-y: scroll;
+          background-color: $input-bg-color;
+          border: 1px solid $input-bg-color;
+        }
+
+        .ui.input {
+          width: 80%;
+
+          .typeahead {
+            width: 100%;
+
+            input {
+              width: 100%;
+            }
+          }
+        }
+
+        .field.full-width {
+          width: 93%;
+        }
+
+        .grid {
+          padding-top: 2em;
+
+          .column.buttons {
+            padding-top: 30px;
+            padding-bottom: 60px;
+          }
+
+          .column {
+            padding-top: 0.2em;
+            padding-bottom: 0.2em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $largeMonitorBreakpoint) {
+  #employerDashboard {
+    .dashboard {
+
+      .add-job {
+        background-color: white;
+        margin: 1.5em 1em;
+
+        .header {
+          margin: 0 10px;
+          .title {
+            font-size: 12px;
+          }
+          .buttons {
+            display: none;
+          }
+        }
+
+        #addJobForm {
+          margin: 0 10px 10px 10px !important;
+          padding: 10px !important;
+
+          .ui.grid {
+            padding-top: 0;
+          }
+
+          .field {
+            width: 100% !important;
+            margin-bottom: 0.5em;
+
+            &.skills.mobile {
+              display: inline-block;
+
+              .value.middle {
+                margin-top: 0;
+                margin-bottom: 0.5em;
+              }
+            }
+
+            &.skills.desktop {
+              display: none;
+            }
+          }
+
+          label {
+            float: left;
+            clear: both;
+            font-size: 1em;
+
+            &.skill {
+              display: inline-block;
+            }
+          }
+
+          .dropdown {
+            .text {
+              font-size: 9px;
+            }
+
+            .item {
+              font-size: 9px;
+            }
+          }
+
+          textarea {
+            height: 5em;
+          }
+
+          .value {
+            float: right;
+            width: 60%;
+
+            input {
+
+            }
+          }
+
+          .upload-job-description {
+            width: 100% !important;
+            display: block;
+            text-align: right;
+
+            label {
+              text-align: right;
+              margin-right: 0;
+            }
+          }
+
+          .buttons {
+            margin: 0 auto;
+            text-align: center;
+            padding: 1em 0 0 0;
+
+            .button {
+              float: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

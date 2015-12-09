@@ -1,0 +1,32 @@
+.conversations {
+  padding-bottom: 50px !important;
+
+  .title {
+    padding-bottom: 5px;
+  }
+
+  .image.column {
+    .ui.circular.image {
+      cursor: pointer;
+      border: 2px solid white;
+      width: 220px;
+      height: 220px;
+
+      &.small {
+        width: 60px;
+        height: 60px;
+      }
+    }
+
+    position: relative;
+    .small-conversations-row {
+      position: absolute;
+      bottom: -30px;
+
+      img {
+        display: inline-block;
+        margin: 5px;
+      }
+    }
+  }
+}

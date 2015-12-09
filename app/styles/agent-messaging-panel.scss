@@ -1,0 +1,49 @@
+@import 'variables';
+
+#agentDashboard {
+  .messaging-panel {
+    .header {
+      .title {
+        display: inline-block;
+      }
+      .with {
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 12px;
+        padding-left: 8px;
+      }
+    }
+
+    .message.comment {
+      width: 95%;
+      float: left;
+      border-bottom: 2px solid $accent-color;
+      margin-left: 20px;
+      padding-bottom: 5px;
+      margin-bottom: 0px;
+
+      .avatar.right.floated {
+        float: right;
+      }
+
+      &:last-of-type {
+        border-bottom: none;
+      }
+
+      .content {
+        &.right.floated {
+          float: right;
+        }
+
+        .author {
+          color: $accent-color;
+          text-transform: uppercase;
+          display: block;
+        }
+        .date {
+          display: block;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@import 'variables';
+
+#agentDashboard {
+  .conversations-list {
+    .header {
+      padding: 10px;
+      h1 {
+        font-size: 2.5em;
+
+        .accent {
+          color: $accent-color;
+        }
+      }
+    }
+    .content {
+      padding: 10px;
+
+      .conversations {
+        .item {
+          padding: 5px !important;
+          cursor: pointer;
+
+          &:hover {
+            background-color: rgba(159, 205, 26, 0.35);
+          }
+        }
+      }
+    }
+  }
+}

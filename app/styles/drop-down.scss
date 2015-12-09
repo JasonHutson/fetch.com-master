@@ -1,0 +1,33 @@
+@import 'variables';
+
+.ui.selection.dropdown {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  height: 30px;
+  min-height: 30px;
+  text-transform: uppercase;
+  border-radius: 0;
+  border: none;
+  background-color: $input-bg-color;
+  color: $input-font-color;
+
+  & > .dropdown.icon {
+    top: 0.5em;
+  }
+
+  .default.text {
+    padding-top: 5px;
+    color: $input-font-color;
+  }
+
+  .text {
+    padding-top: 5px;
+    color: black;
+  }
+
+  .menu {
+    .item {
+      text-transform: uppercase;
+    }
+  }
+}

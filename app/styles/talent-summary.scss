@@ -1,0 +1,60 @@
+$primary-color: #9fcd1a;
+
+.talentSummary {
+  padding: 40px 10px 30px 10px;
+  .image-container {
+    margin: 0 -10px 0 -10px;
+  }
+  h3 {
+    margin-top: 30px;
+    color: $primary-color;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  p.profile-summary {
+    margin-top: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-left: 20px;
+  }
+  .ui-list {
+    padding-left: 20px;
+    .item {
+      font-size: 1em;
+      margin-bottom: 1em;
+      font-weight: normal;
+      text-transform: uppercase;
+    }
+  }
+
+  .network-icons {
+    float: right;
+
+    .icon {
+      color: white;
+      cursor: pointer;
+
+      &.file.text.outline {
+        font-size: 22px;
+      }
+
+      &.linkedin.square {
+        font-size: 26px;
+      }
+
+      &.github {
+        font-size: 28px;
+      }
+    }
+  }
+
+  .actions {
+    clear: both;
+    padding-top: 10px;
+    text-align: center;
+
+    .ui.button {
+      width: 140px;
+    }
+  }
+}
